@@ -4,7 +4,7 @@
 |---|---|
 | **ID** | TC-002 |
 | **Title** | Signing in with existing email |
-| **Status** | Failed ❌ |
+| **Status** | Failed |
 
 ## Preconditions
 1. The homepage is opened
@@ -28,5 +28,3 @@ A box with a success message appears which can be closed by clicking on cross ic
 
 ## Actual Result
 A phone number field appears, prompting the user to enter their phone number and receive an OTP and pass the captcha to complete sign in.
-
-> ❌ Bug tracked in [BUG-002](../bug-reports/BUG-002-sign-in-requires-phone-otp.md).
