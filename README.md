@@ -19,8 +19,8 @@ This repo contains manually written test cases and bug reports covering core use
 
 | ID | Title | Status |
 |---|---|---|
-| [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | Signing up with valid email | ✅ Passed |
-| [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with existing email | ❌ Failed |
+| [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | Signing up with valid email | Passed |
+| [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with existing email | Failed |
 
 ---
 
@@ -45,5 +45,5 @@ All test cases executed on:
 ---
 
 ## Notes
-- Russian UI strings are preserved as-is since the website interface is in Russian
+- Russian UI strings are preserved as-is since the website interface is available in Russian and Kazakh only
 - Fresh email addresses are generated via [TempMail](https://temp-mail.org) before each run of auth-related test cases
