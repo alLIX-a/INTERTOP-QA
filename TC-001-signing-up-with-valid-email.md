@@ -4,7 +4,7 @@
 |---|---|
 | **ID** | TC-001 |
 | **Title** | Signing up with valid email |
-| **Status** | Passed ✅ |
+| **Status** | Passed |
 
 ## Preconditions
 1. The homepage is opened
@@ -30,4 +30,3 @@ A box with a "Поздравляем, регистрация прошла уда
 ## Actual Result
 Success message appeared but got dismissed automatically without clicking on cross icon. Dropdown is shown with "Мой профиль" option and redirected to the profile page correctly.
 
-> ⚠️ Note: The success notification auto-dismisses after ~3 seconds without user interaction. This is a known bug tracked in [BUG-001](../bug-reports/BUG-001-success-notification-auto-dismisses.md).
