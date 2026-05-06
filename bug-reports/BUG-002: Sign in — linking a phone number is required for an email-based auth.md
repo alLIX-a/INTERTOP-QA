@@ -3,7 +3,7 @@
 | Field | Details |
 |---|---|
 | **ID** | BUG-002 |
-| **Priority** | Medium |
+| **Severity** | Medium |
 | **Status** | To Do |
 | **Reporter** | Alexey |
 | **Related TC** | [TC-002](../test-cases/TC-002-signing-in-with-existing-email.md) |
