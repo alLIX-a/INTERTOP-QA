@@ -3,7 +3,7 @@
 | Field | Details |
 |---|---|
 | **ID** | BUG-001 |
-| **Priority** | Low |
+| **Severity** | Low |
 | **Status** | To Do |
 | **Reporter** | Alexey |
 | **Related TC** | [TC-001](../test-cases/TC-001-signing-up-with-valid-email.md) |
