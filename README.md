@@ -10,8 +10,8 @@ This repo contains manually written test cases and bug reports covering core use
 
 | Area | Test Cases | Bugs Found |
 |---|---|---|
-| Authentication | 4 | 2 |
-| **Total** | **4** | **2** |
+| Authentication | 5 | 2 |
+| **Total** | **5** | **2** |
 
 ---
 
@@ -23,6 +23,7 @@ This repo contains manually written test cases and bug reports covering core use
 | [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with existing email | Failed |
 | [TC-003](test-cases/TC-003-signing-up-with-an-email-in-invalid-formats.md) | Signing up with an email in invalid formats | Passed |
 | [TC-004](test-cases/TC-004-signing-in-with-non-existing-email.md) | Signing in with non-existing email | Passed |
+| [TC-005](test-cases/TC-005-resetting-the-password-via-email-for-an-existing-user.md) | Resetting the password via email for an existing user | Blocked |
 
 ---
 
