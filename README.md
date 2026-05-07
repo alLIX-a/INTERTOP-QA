@@ -10,8 +10,8 @@ This repo contains manually written test cases and bug reports covering core use
 
 | Area | Test Cases | Bugs Found |
 |---|---|---|
-| Authentication | 5 | 2 |
-| **Total** | **5** | **2** |
+| Authentication | 5 | 3 |
+| **Total** | **5** | **3** |
 
 ---
 
