@@ -21,7 +21,7 @@ This repo contains manually written test cases and bug reports covering core use
 |---|---|---|
 | [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | Signing up with valid email | Passed |
 | [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with existing email | Failed |
-| [TC-003](test-cases/TC-002-signing-in-with-existing-email.md) | Signing up with an email in invalid formats | Passed |
+| [TC-003](test-cases/TC-003-signing-up-with-an-email-in-invalid-formats.md) | Signing up with an email in invalid formats | Passed |
 | [TC-004](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with non-existing email | Passed |
 
 ---
