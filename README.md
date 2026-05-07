@@ -10,8 +10,8 @@ This repo contains manually written test cases and bug reports covering core use
 
 | Area | Test Cases | Bugs Found |
 |---|---|---|
-| Authentication | 2 | 2 |
-| **Total** | **2** | **2** |
+| Authentication | 4 | 2 |
+| **Total** | **4** | **2** |
 
 ---
 
@@ -21,12 +21,14 @@ This repo contains manually written test cases and bug reports covering core use
 |---|---|---|
 | [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | Signing up with valid email | Passed |
 | [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with existing email | Failed |
+| [TC-003](test-cases/TC-002-signing-in-with-existing-email.md) | Signing up with an email in invalid formats | Passed |
+| [TC-004](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with non-existing email | Passed |
 
 ---
 
 ## Bug Reports
 
-| ID | Title | Priority | Status |
+| ID | Title | Severity | Status |
 |---|---|---|---|
 | [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses.md) | Success notification auto-dismisses without user interaction | Low | To Do |
 | [BUG-002](bug-reports/BUG-002-sign-in-requires-phone-otp.md) | Sign in — linking a phone number is required for email-based auth | Medium | To Do |
