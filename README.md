@@ -33,6 +33,7 @@ This repo contains manually written test cases and bug reports covering core use
 |---|---|---|---|
 | [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Success notification auto-dismisses without user interaction | Low | To Do |
 | [BUG-002](bug-reports/BUG-002-Sign-in-linking-a-phone-number-is-required-for-an-email-based-auth.md) | Sign in — linking a phone number is required for email-based auth | Medium | To Do |
+| [BUG-003](bug-reports/BUG-003-Password-reset-setting-current-password as-the-new-one-is-allowed.md) | Password reset - setting current password as the new one is allowed | Medium | To Do |
 
 ---
 
