@@ -30,7 +30,7 @@ This repo contains manually written test cases and bug reports covering core use
 
 | ID | Title | Severity | Status |
 |---|---|---|---|
-| [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses.md) | Success notification auto-dismisses without user interaction | Low | To Do |
+| [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Success notification auto-dismisses without user interaction | Low | To Do |
 | [BUG-002](bug-reports/BUG-002-sign-in-requires-phone-otp.md) | Sign in — linking a phone number is required for email-based auth | Medium | To Do |
 
 ---
