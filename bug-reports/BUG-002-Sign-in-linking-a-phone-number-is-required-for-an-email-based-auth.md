@@ -1,38 +1,31 @@
-# BUG-002: Sign in — linking a phone number is required for an email-based auth
-
-| Field | Details |
+# BUG-002: Вход — для авторизации через email требуется привязка номера телефона
+| Поле | Детали |
 |---|---|
 | **ID** | BUG-002 |
-| **Severity** | Medium |
-| **Status** | To Do |
-| **Reporter** | Alexey |
-| **Related TC** | [TC-002](../test-cases/TC-002-signing-in-with-existing-email.md) |
-
-## Preconditions
-1. The homepage is opened
-2. The user is logged out
-3. The user is signed up with credentials from Test Data
-
-## Test Data
-| Field | Value |
+| **Серьёзность** | Средняя |
+| **Статус** | К выполнению |
+| **Репортер** | Alexey |
+| **Связанный ТК** | [TC-002](../test-cases/TC-002-signing-in-with-existing-email.md) |
+## Предусловия
+1. Главная страница открыта
+2. Пользователь не авторизован
+3. Пользователь зарегистрирован с данными из раздела Тестовые данные
+## Тестовые данные
+| Поле | Значение |
 |---|---|
 | Email | gomimoh799@lohinja.com (TempMail) |
-| Password | Test123 |
-
-## Steps to Reproduce
-1. Click on persona icon at top-right to open the form
-2. Paste the email into the "Телефон или Email" field
-3. Paste the password into the "Пароль" field
-4. Click on "Войти" button
-
-## Expected Result
-A box with a success message appears which can be closed by clicking on cross icon at top-right. The user is signed in. Clicking on persona icon now shows a dropdown menu with "Мой профиль" option, which redirects the user to the profile page.
-
-## Actual Result
-A phone number field appears, prompting the user to enter their phone number and receive an OTP and pass the captcha to complete sign in.
-
-## Environment
-| Field | Value |
+| Пароль | Test123 |
+## Шаги для воспроизведения
+1. Нажать на иконку персоны в правом верхнем углу для открытия формы
+2. Вставить email в поле "Телефон или Email"
+3. Вставить пароль в поле "Пароль"
+4. Нажать на кнопку "Войти"
+## Ожидаемый результат
+Появляется окно с сообщением об успешном входе, которое можно закрыть нажатием на иконку крестика в правом верхнем углу. Пользователь авторизован. Нажатие на иконку персоны показывает выпадающее меню с опцией "Мой профиль", которая перенаправляет на страницу профиля.
+## Фактический результат
+Появляется поле для ввода номера телефона с требованием ввести номер, получить OTP и пройти капчу для завершения входа.
+## Окружение
+| Поле | Значение |
 |---|---|
-| OS | macOS Tahoe 26.4 |
-| Browser | Safari 26.4 (21624.1.16.11.4) |
+| ОС | macOS Tahoe 26.4 |
+| Браузер | Safari 26.4 (21624.1.16.11.4) |
