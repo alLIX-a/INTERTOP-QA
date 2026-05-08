@@ -1,30 +1,24 @@
-# TC-002: Signing in with existing email
-
-| Field | Details |
+# TC-002: Вход с существующим email
+| Поле | Детали |
 |---|---|
 | **ID** | TC-002 |
-| **Title** | Signing in with existing email |
-| **Status** | Failed |
-
-## Preconditions
-1. The homepage is opened
-2. The user is logged out
-3. The user has a pre-registered account with the credentials from Test Data
-
-## Test Data
-| Field | Value |
+| **Название** | Вход с существующим email |
+| **Статус** | Провален |
+## Предусловия
+1. Главная страница открыта
+2. Пользователь не авторизован
+3. У пользователя есть предварительно зарегистрированный аккаунт с данными из раздела Тестовые данные
+## Тестовые данные
+| Поле | Значение |
 |---|---|
 | Email | gomimoh799@lohinja.com (TempMail) |
-| Password | Test123 |
-
-## Steps
-1. Click on persona icon at top-right to open the form
-2. Paste the email into the "Телефон или Email" field
-3. Paste the password into the "Пароль" field
-4. Click on "Войти" button
-
-## Expected Result
-A box with a success message appears which can be closed by clicking on cross icon at top-right. The user is signed in. Clicking on persona icon now shows a dropdown menu with "Мой профиль" option, which redirects the user to the profile page.
-
-## Actual Result
-A phone number field appears, prompting the user to enter their phone number and receive an OTP and pass the captcha to complete sign in.
+| Пароль | Test123 |
+## Шаги
+1. Нажать на иконку персоны в правом верхнем углу для открытия формы
+2. Вставить email в поле "Телефон или Email"
+3. Вставить пароль в поле "Пароль"
+4. Нажать на кнопку "Войти"
+## Ожидаемый результат
+Появляется окно с сообщением об успешном входе, которое можно закрыть нажатием на иконку крестика в правом верхнем углу. Пользователь авторизован. Нажатие на иконку персоны показывает выпадающее меню с опцией "Мой профиль", которая перенаправляет на страницу профиля.
+## Фактический результат
+Появляется поле для ввода номера телефона с требованием ввести номер, получить OTP и пройти капчу для завершения входа.
