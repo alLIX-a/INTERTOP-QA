@@ -1,29 +1,23 @@
-# TC-004: Signing in with non-existing email
-
-| Field | Details |
+# TC-004: Вход с несуществующим email
+| Поле | Детали |
 |---|---|
 | **ID** | TC-004 |
-| **Title** | Signing in with non-existing email |
-| **Status** | Passed |
-
-## Preconditions
-1. The homepage is opened
-2. The user is logged out
-
-## Test Data
-| Field | Value |
+| **Название** | Вход с несуществующим email |
+| **Статус** | Пройден |
+## Предусловия
+1. Главная страница открыта
+2. Пользователь не авторизован
+## Тестовые данные
+| Поле | Значение |
 |---|---|
 | Email | notexistingemail@email.com |
-| Password | Test123 |
-
-## Steps
-1. Click on persona icon at top-right to open the form
-2. Paste the email into the "Телефон или Email" field
-3. Paste the password into the "Пароль" field
-4. Click on "Войти" button
-
-## Expected Result
-Both fields' borders become red. The "Неверный логин или пароль" error message appears under both fields. The user isn't signed in.
-
-## Actual Result
-Both fields' borders are red. The "Неверный логин или пароль" error message appears under both fields. The user isn't signed in.
+| Пароль | Test123 |
+## Шаги
+1. Нажать на иконку персоны в правом верхнем углу для открытия формы
+2. Вставить email в поле "Телефон или Email"
+3. Вставить пароль в поле "Пароль"
+4. Нажать на кнопку "Войти"
+## Ожидаемый результат
+Границы обоих полей становятся красными. Под обоими полями появляется сообщение об ошибке "Неверный логин или пароль". Пользователь не авторизован.
+## Фактический результат
+Границы обоих полей красные. Под обоими полями появляется сообщение об ошибке "Неверный логин или пароль". Пользователь не авторизован.
