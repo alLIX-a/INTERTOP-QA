@@ -1,53 +1,54 @@
 # intertop-qa
+Документация по ручному тестированию [INTERTOP.KZ](https://intertop.kz) — казахстанского интернет-магазина.
 
-Manual QA test documentation for [INTERTOP.KZ](https://intertop.kz) — a Kazakhstani online e-commerce store.
-
-This repo contains manually written test cases and bug reports covering core user flows on the website.
+Репозиторий содержит написанные вручную тест-кейсы и баг-репорты, покрывающие основные пользовательские сценарии на сайте.
 
 ---
 
-## Coverage Summary
+## Сводка покрытия
 
-| Area | Test Cases | Bugs Found |
+| Область | Тест-кейсы | Пройдено | Провалено | Заблокировано | Найдено багов |
+|---|---|---|---|---|---|
+| Авторизация | 5 | 3 | 1 | 1 | 3 |
+| **Итого** | **5** | **3** | **1** | **1** | **3** |
+
+---
+
+## Тест-кейсы
+
+| ID | Название | Статус |
 |---|---|---|
-| Authentication | 5 | 3 |
-| **Total** | **5** | **3** |
+| [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | Регистрация с валидным email | Пройден |
+| [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Вход с существующим email | Провален |
+| [TC-003](test-cases/TC-003-signing-up-with-an-email-in-invalid-formats.md) | Регистрация с email в невалидных форматах | Пройден |
+| [TC-004](test-cases/TC-004-signing-in-with-non-existing-email.md) | Вход с несуществующим email | Пройден |
+| [TC-005](test-cases/TC-005-resetting-the-password-via-email-for-an-existing-user.md) | Сброс пароля через email для существующего пользователя | Заблокирован |
 
 ---
 
-## Test Cases
+## Баг-репорты
 
-| ID | Title | Status |
-|---|---|---|
-| [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | Signing up with valid email | Passed |
-| [TC-002](test-cases/TC-002-signing-in-with-existing-email.md) | Signing in with existing email | Failed |
-| [TC-003](test-cases/TC-003-signing-up-with-an-email-in-invalid-formats.md) | Signing up with an email in invalid formats | Passed |
-| [TC-004](test-cases/TC-004-signing-in-with-non-existing-email.md) | Signing in with non-existing email | Passed |
-| [TC-005](test-cases/TC-005-resetting-the-password-via-email-for-an-existing-user.md) | Resetting the password via email for an existing user | Blocked |
-
----
-
-## Bug Reports
-
-| ID | Title | Severity | Status |
+| ID | Название | Серьёзность | Статус |
 |---|---|---|---|
-| [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Success notification auto-dismisses without user interaction | Low | To Do |
-| [BUG-002](bug-reports/BUG-002-Sign-in-linking-a-phone-number-is-required-for-an-email-based-auth.md) | Sign in — linking a phone number is required for email-based auth | Medium | To Do |
-| [BUG-003](bug-reports/BUG-003-Password-reset-setting-current-password-as-the-new-one-is-allowed.md) | Password reset - setting current password as the new one is allowed | Medium | To Do |
+| [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Уведомление об успехе закрывается автоматически без действий пользователя | Низкая | К выполнению |
+| [BUG-002](bug-reports/BUG-002-Sign-in-linking-a-phone-number-is-required-for-an-email-based-auth.md) | Вход — для авторизации через email требуется привязка номера телефона | Средняя | К выполнению |
+| [BUG-003](bug-reports/BUG-003-Password-reset-setting-current-password-as-the-new-one-is-allowed.md) | Сброс пароля — установка текущего пароля в качестве нового разрешена | Средняя | К выполнению |
 
 ---
 
-## Environment
+## Окружение
 
-All test cases executed on:
+Все тест-кейсы выполнены в следующем окружении:
 
-| Field | Value |
+| Поле | Значение |
 |---|---|
-| OS | macOS Tahoe 26.4 |
-| Browser | Safari 26.4 (21624.1.16.11.4) |
+| ОС | macOS Tahoe 26.4 |
+| Браузер | Safari 26.4 (21624.1.16.11.4) |
 
 ---
 
-## Notes
-- Russian UI strings are preserved as-is since the website interface is available in Russian and Kazakh only
-- Fresh email addresses are generated via [TempMail](https://temp-mail.org) before each run of auth-related test cases
+## Примечания
+
+- Строки интерфейса на русском сохранены как есть, поскольку сайт доступен только на русском и казахском языках
+- Свежие email-адреса генерируются через [TempMail](https://temp-mail.org) перед каждым запуском тест-кейсов связанных с авторизацией
+- TempMail адреса одноразовые и становятся недоступны после закрытия сессии — для воспроизведения тест-кейсов необходимо генерировать новый адрес
