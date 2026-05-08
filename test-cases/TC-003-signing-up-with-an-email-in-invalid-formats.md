@@ -1,36 +1,30 @@
-# TC-003: Signing up with an email in invalid formats
-
-| Field | Details |
+# TC-003: Регистрация с email в невалидных форматах
+| Поле | Детали |
 |---|---|
 | **ID** | TC-003 |
-| **Title** | Signing up with an email in invalid formats |
-| **Status** | Passed |
-
-## Preconditions
-1. The homepage is opened
-2. The user is logged out
-
-## Test Data
-| # | Email | Description |
+| **Название** | Регистрация с email в невалидных форматах |
+| **Статус** | Пройден |
+## Предусловия
+1. Главная страница открыта
+2. Пользователь не авторизован
+## Тестовые данные
+| # | Email | Описание |
 |---|---|---|
-| 1 | testemail@domain. | Missing part after dot |
-| 2 | testemail@domain | Missing dot and part after it |
-| 3 | testemail@.com | Missing domain |
-| 4 | testemaildomain.com | Missing @ |
-| 5 | testemail | Missing @ and domain |
-| — | Test123 | Password (same for all runs) |
-
-## Steps
-1. Click on persona icon at top-right to open the form
-2. In the form opened, click on "Создать аккаунт" button
-3. Paste the first email from Test Data into the "Телефон или Email" field
-4. Paste the password into the "Пароль" field
-5. Click on "I'm not a robot" checkbox and complete the captcha
-6. Click on "Создать аккаунт" button
-7. Repeat steps 3-6 with every email listed in Test Data. To verify none of the invalid emails were registered, attempt to sign in with each one following TC-004 (ignore test data in TC-004)
-
-## Expected Result
-"Телефон или Email" field's borders become red, with a red-colored "Введите телефон или Email" message appearing under the field. Clicking on "Создать аккаунт" button doesn't register the user.
-
-## Actual Result
-"Телефон или Email" field's borders became red, the "Введите телефон или Email" error message appeared under the field for all 5 email variations. None of the invalid emails were registered, verified via [TC-004](TC-004-signing-in-with-non-existing-email.md).
+| 1 | testemail@domain. | Отсутствует часть после точки |
+| 2 | testemail@domain | Отсутствует точка и часть после неё |
+| 3 | testemail@.com | Отсутствует домен |
+| 4 | testemaildomain.com | Отсутствует @ |
+| 5 | testemail | Отсутствует @ и домен |
+| — | Test123 | Пароль (одинаковый для всех запусков) |
+## Шаги
+1. Нажать на иконку персоны в правом верхнем углу для открытия формы
+2. В открывшейся форме нажать на кнопку "Создать аккаунт"
+3. Вставить первый email из раздела Тестовые данные в поле "Телефон или Email"
+4. Вставить пароль в поле "Пароль"
+5. Нажать на чекбокс "I'm not a robot" и пройти капчу
+6. Нажать на кнопку "Создать аккаунт"
+7. Повторить шаги 3-6 для каждого email из раздела Тестовые данные. Для проверки того что ни один из невалидных email не был зарегистрирован, попытаться войти с каждым из них по сценарию TC-004 (тестовые данные из TC-004 игнорировать)
+## Ожидаемый результат
+Границы поля "Телефон или Email" становятся красными, под полем появляется сообщение об ошибке красного цвета "Введите телефон или Email". Нажатие на кнопку "Создать аккаунт" не регистрирует пользователя.
+## Фактический результат
+Границы поля "Телефон или Email" стали красными, сообщение об ошибке "Введите телефон или Email" появилось под полем для всех 5 вариантов email. Ни один из невалидных email не был зарегистрирован, проверено через [TC-004](TC-004-signing-in-with-non-existing-email.md).
