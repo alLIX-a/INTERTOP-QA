@@ -1,32 +1,25 @@
-# TC-001: Signing up with valid email
-
-| Field | Details |
+# TC-001: Регистрация с валидным email
+| Поле | Детали |
 |---|---|
 | **ID** | TC-001 |
-| **Title** | Signing up with valid email |
-| **Status** | Passed |
-
-## Preconditions
-1. The homepage is opened
-2. The user is logged out
-
-## Test Data
-| Field | Value |
+| **Название** | Регистрация с валидным email |
+| **Статус** | Пройден |
+## Предусловия
+1. Главная страница открыта
+2. Пользователь не авторизован
+## Тестовые данные
+| Поле | Значение |
 |---|---|
-| Email | Generate a fresh address before each run on [TempMail](https://temp-mail.org) |
-| Password | Test123 |
-
-## Steps
-1. Click on persona icon at top-right to open the form
-2. Click on "Создать аккаунт" button to switch to the sign-up form
-3. Paste the generated email address into the "Телефон или Email" field
-4. Paste the password into the "Пароль" field
-5. Click on "I'm not a robot" checkbox and complete the captcha
-6. Click on "Создать аккаунт" button to submit
-
-## Expected Result
-A box with a "Поздравляем, регистрация прошла удачно!" message appears which can be closed by clicking on the cross icon at top-right. The user is now registered and gets signed in automatically. Clicking on the persona icon now shows a dropdown menu with "Мой профиль" option, which redirects the user to the profile page.
-
-## Actual Result
-Success message appeared but got dismissed automatically without clicking on cross icon. Dropdown is shown with "Мой профиль" option and redirected to the profile page correctly.
-
+| Email | Генерировать свежий адрес перед каждым запуском на [TempMail](https://temp-mail.org) |
+| Пароль | Test123 |
+## Шаги
+1. Нажать на иконку персоны в правом верхнем углу для открытия формы
+2. Нажать на кнопку "Создать аккаунт" для переключения на форму регистрации
+3. Вставить сгенерированный email в поле "Телефон или Email"
+4. Вставить пароль в поле "Пароль"
+5. Нажать на чекбокс "I'm not a robot" и пройти капчу
+6. Нажать на кнопку "Создать аккаунт" для отправки формы
+## Ожидаемый результат
+Появляется окно с сообщением "Поздравляем, регистрация прошла удачно!", которое можно закрыть нажатием на иконку крестика в правом верхнем углу. Пользователь зарегистрирован и автоматически авторизован. Нажатие на иконку персоны показывает выпадающее меню с опцией "Мой профиль", которая перенаправляет на страницу профиля.
+## Фактический результат
+Сообщение об успехе появилось, но закрылось автоматически без нажатия на крестик. Выпадающее меню отображается с опцией "Мой профиль" и корректно перенаправляет на страницу профиля.
