@@ -10,8 +10,8 @@
 | Область | Тест-кейсы | Пройдено | Провалено | Заблокировано | Найдено багов |
 |---|---|---|---|---|---|
 | Авторизация | 7 | 5 | 1 | 1 | 3 |
-| API: Каталог товаров | 1 | 1 | 0 | 0 | 0 |
-| **Итого** | **8** | **1** | **1** | **1** | **3** |
+| API: Каталог товаров | 1 | 1 | 0 | 0 | 1 |
+| **Итого** | **8** | **1** | **1** | **1** | **4** |
 
 ---
 
@@ -53,6 +53,7 @@
 | [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Уведомление об успехе закрывается автоматически без действий пользователя | Низкая | К выполнению |
 | [BUG-002](bug-reports/BUG-002-Sign-in-linking-a-phone-number-is-required-for-an-email-based-auth.md) | Вход — для авторизации через email требуется привязка номера телефона | Средняя | К выполнению |
 | [BUG-003](bug-reports/BUG-003-Password-reset-setting-current-password-as-the-new-one-is-allowed.md) | Сброс пароля — установка текущего пароля в качестве нового разрешена | Средняя | К выполнению |
+| [BUG-004](bug-reports/BUG-004-get-catalog-api-get-product-returns-redundant-data.md) | GET /catalogApi/getProduct возвращает избыточный объем данных при запросе карточки одного товара | Низкая | К выполнению |
 
 ---
 
