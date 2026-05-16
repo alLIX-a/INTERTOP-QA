@@ -2,13 +2,13 @@
 
 ### Предусловия
 1. Товар со slug `gumshoes-vanz-7502616` не существует
-2. X-Locale: ru-kz задан в заголовке запроса
-3. X-Site: kz задан в заголовке запроса
+2. Postman открыт
 
 ### Тестовые данные
-- **Endpoint:** `https://front-api.intertop.kz/catalogApi/getProduct`
 - **Method:** GET
+- **Endpoint:** `https://front-api.intertop.kz/catalogApi/getProduct`
 - **Params:** `body: [{"id":"gumshoes-vanz-7502616"}]`
+- **Headers:** X-Locale: ru-kz, X-Site: kz
 
 ### Шаги воспроизведения
 1. Открыть Postman
