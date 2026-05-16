@@ -10,8 +10,8 @@
 | Область | Тест-кейсы | Пройдено | Провалено | Заблокировано | Найдено багов |
 |---|---|---|---|---|---|
 | Авторизация | 7 | 5 | 1 | 1 | 3 |
-| API: Каталог товаров | 2 | 2 | 0 | 0 | 1 |
-| **Итого** | **9** | **7** | **1** | **1** | **4** |
+| API: Каталог товаров | 3 | 2 | 1 | 0 | 2 |
+| **Итого** | **10** | **7** | **2** | **1** | **5** |
 
 ---
 
@@ -44,6 +44,7 @@
 |---|---|---|
 | [TC-008](test-cases/TC-008-get-catalog-api-get-product.md) | GET /catalogApi/getProduct — валидный slug | Пройден |
 | [TC-009](test-cases/TC-009-get-catalog-api-get-product-invalid-slug.md) | GET /catalogApi/getProduct — невалидный slug | Пройден |
+| [TC-010](test-cases/TC-010-get-catalog-api-get-product-missing-body.md) | GET /catalogApi/getProduct — отсутствующий body | Провален |
 
 ---
 
