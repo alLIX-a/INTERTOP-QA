@@ -10,9 +10,9 @@
 | Область | Тест-кейсы | Пройдено | Провалено | Заблокировано | Найдено багов |
 |---|---|---|---|---|---|
 | Авторизация | 7 | 5 | 1 | 1 | 3 |
-| Поиск товаров | 7 | 6 | 1 | 0 | 1 |
+| Поиск товаров | 7 | 6 | 1 | 0 | 2 |
 | API: Каталог товаров | 3 | 2 | 1 | 0 | 2 |
-| **Итого** | **17** | **13** | **3** | **1** | **6** |
+| **Итого** | **17** | **13** | **3** | **1** | **7** |
 
 ---
 
@@ -66,6 +66,7 @@
 | [BUG-004](bug-reports/BUG-004-get-catalog-api-get-product-returns-redundant-data.md) | GET /catalogApi/getProduct возвращает избыточный объем данных при запросе карточки одного товара | Низкая | К выполнению |
 | [BUG-005](bug-reports/BUG-005-get-catalog-api-get-product-server-response-returns-500-on-request-with-missing-body.md) | GET /catalogApi/getProduct возвращает статус код 500 Internal Server Error при отсутствующем body запроса | Средняя | К выполнению |
 | [BUG-006](bug-reports/BUG-006-search-field-search-window-dismisses-without-an-error-message-on-clicking-the-search-button-with-an-empty-field.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при пустом поле | Низкая | К выполнению |
+| [BUG-007](bug-reports/BUG-007-search-field-search-window-dismisses-without-an-error-message-on-clicking-search-button-with-string-less-than-3-characters.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при длине запроса меньше 3 символов | Низкая | К выполнению |
 
 ---
 
@@ -75,8 +76,8 @@
 
 | Поле | Значение |
 |---|---|
-| ОС | macOS Tahoe 26.4 |
-| Браузер | Safari 26.4 (21624.1.16.11.4) |
+| ОС | macOS Tahoe, 26.4 |
+| Браузер | Safari, 26.4 (21624.1.16.11.4) |
 
 ---
 
