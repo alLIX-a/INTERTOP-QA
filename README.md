@@ -34,14 +34,14 @@
 | [TC-014](test-cases/TC-014-searching-for-non-existing-item.md) | Поиск несуществующего товара | Пройден |
 | [TC-015](test-cases/TC-015-searching-for-an-item-with-129-characters-long-string.md) | Поиск товара со строкой в 129 символов (на 1 больше максимальной границы) | Пройден |
 | [TC-016](test-cases/TC-016-searching-for-an-item-with-empty-search-field.md) | Поиск товара с пустым полем ввода | Провален |
-| [TC-017](test-cases/TC-017-searching-for-an-existing-item-with-incomplete-item-name.md) | Поиск существующего товара с неполным названием | Пройдено |
+| [TC-017](test-cases/TC-017-searching-for-an-existing-item-with-incomplete-item-name.md) | Поиск существующего товара с неполным названием | Пройден |
 | [TC-018](test-cases/TC-018-searching-for-an-item-with-request-min-length-of-3-characters.md) | Поиск товара с запросом минимально допустимой длины (3 символа) | Пройден |
-| [TC-019](test-cases/TC-019-searching-for-an-item-with-2-characters-long-string.md) | Поиск товара с запросом длиной в 2 символа (минимально допустимая - 3 символа) | Провалено |
-| [TC-020](test-cases/TC-020-injecting-sql-into-the-search-field.md) | Ввод SQL-инъекции в поле поиска товара | Пройдено |
-| [TC-021](test-cases/TC-021-injecting-xss-into-the-search-field.md) | Ввод XSS-инъекции в поле поиска товара | Пройдено |
-| [TC-022](test-cases/TC-022-special-symbols-in-a-search-field.md) | Ввод спецсимволов в поле поиска товара | Пройдено |
-| [TC-023](test-cases/TC-023-adding-an-item-with-size-selected-to-cart.md) | Добавление товара с заданным размером в корзину | Пройдено |
-| [TC-024](test-cases/TC-024-adding-an-item-with-no-size-selected-to-cart.md) | Добавление товара с не заданным размером в корзину | Пройдено |
+| [TC-019](test-cases/TC-019-searching-for-an-item-with-2-characters-long-string.md) | Поиск товара с запросом длиной в 2 символа (минимально допустимая - 3 символа) | Провален |
+| [TC-020](test-cases/TC-020-injecting-sql-into-the-search-field.md) | Ввод SQL-инъекции в поле поиска товара | Пройден |
+| [TC-021](test-cases/TC-021-injecting-xss-into-the-search-field.md) | Ввод XSS-инъекции в поле поиска товара | Пройден |
+| [TC-022](test-cases/TC-022-special-symbols-in-a-search-field.md) | Ввод спецсимволов в поле поиска товара | Пройден |
+| [TC-023](test-cases/TC-023-adding-an-item-with-size-selected-to-cart.md) | Добавление товара с заданным размером в корзину | Пройден |
+| [TC-024](test-cases/TC-024-adding-an-item-with-no-size-selected-to-cart.md) | Добавление товара с не заданным размером в корзину | Пройден |
 
 
 ## API Testing
