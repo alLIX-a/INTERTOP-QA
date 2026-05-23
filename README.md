@@ -71,16 +71,16 @@
 
 ## Баг-репорты
 
-| ID | Название | Серьёзность | Статус |
-|---|---|---|---|
-| [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Уведомление об успехе закрывается автоматически без действий пользователя | Низкая | К выполнению |
-| [BUG-002](bug-reports/BUG-002-Sign-in-linking-a-phone-number-is-required-for-an-email-based-auth.md) | Вход — для авторизации через email требуется привязка номера телефона | Средняя | К выполнению |
-| [BUG-003](bug-reports/BUG-003-Password-reset-setting-current-password-as-the-new-one-is-allowed.md) | Сброс пароля — установка текущего пароля в качестве нового разрешена | Средняя | К выполнению |
-| [BUG-004](bug-reports/BUG-004-get-catalog-api-get-product-returns-redundant-data.md) | GET /catalogApi/getProduct возвращает избыточный объем данных при запросе карточки одного товара | Низкая | К выполнению |
-| [BUG-005](bug-reports/BUG-005-get-catalog-api-get-product-server-response-returns-500-on-request-with-missing-body.md) | GET /catalogApi/getProduct возвращает статус код 500 Internal Server Error при отсутствующем body запроса | Средняя | К выполнению |
-| [BUG-006](bug-reports/BUG-006-search-field-search-window-dismisses-without-an-error-message-on-clicking-the-search-button-with-an-empty-field.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при пустом поле | Низкая | К выполнению |
-| [BUG-007](bug-reports/BUG-007-search-field-search-window-dismisses-without-an-error-message-on-clicking-search-button-with-string-less-than-3-characters.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при длине запроса меньше 3 символов | Средняя | К выполнению |
-| [BUG-008](bug-reports/BUG-008-item-page-the-user-can-the-item-to-the-cart-in-quantity-higher-than-available.md) | Страница товара - пользователь может добавить товар в корзину в большем количестве чем доступно в наличии | Средняя | К выполнению |
+| ID | Название | Серьёзность | Приоритет | Статус |
+|---|---|---|---|---|
+| [BUG-001](bug-reports/BUG-001-success-notification-auto-dismisses-without-user-interaction.md) | Уведомление об успехе закрывается автоматически без действий пользователя | Низкая | Низкий | К выполнению |
+| [BUG-002](bug-reports/BUG-002-Sign-in-linking-a-phone-number-is-required-for-an-email-based-auth.md) | Вход — для авторизации через email требуется привязка номера телефона | Высокая | Высокий | К выполнению |
+| [BUG-003](bug-reports/BUG-003-Password-reset-setting-current-password-as-the-new-one-is-allowed.md) | Сброс пароля — установка текущего пароля в качестве нового разрешена | Низкая | Средний | К выполнению |
+| [BUG-004](bug-reports/BUG-004-get-catalog-api-get-product-returns-redundant-data.md) | GET /catalogApi/getProduct возвращает избыточный объем данных при запросе карточки одного товара | Низкая | Низкий | К выполнению |
+| [BUG-005](bug-reports/BUG-005-get-catalog-api-get-product-server-response-returns-500-on-request-with-missing-body.md) | GET /catalogApi/getProduct возвращает статус код 500 Internal Server Error при отсутствующем body запроса | Средняя | Низкий | К выполнению |
+| [BUG-006](bug-reports/BUG-006-search-field-search-window-dismisses-without-an-error-message-on-clicking-the-search-button-with-an-empty-field.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при пустом поле | Низкая | Низкий | К выполнению |
+| [BUG-007](bug-reports/BUG-007-search-field-search-window-dismisses-without-an-error-message-on-clicking-search-button-with-string-less-than-3-characters.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при длине запроса меньше 3 символов | Низкая | Средний | К выполнению |
+| [BUG-008](bug-reports/BUG-008-item-page-the-user-can-the-item-to-the-cart-in-quantity-higher-than-available.md) | Страница товара - пользователь может добавить товар в корзину в большем количестве чем доступно в наличии | Средняя | Высокий | К выполнению |
 
 ---
 
