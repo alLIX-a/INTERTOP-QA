@@ -1,9 +1,11 @@
 ## BUG-005: GET /catalogApi/getProduct возвращает 500 Internal Server Error при отсутствующем body запроса
 
-**Severity:** Medium
-**Priority:** Medium
-**Тип:** Validation
-**Статус:** Open
+| Поле | Детали |
+|---|---|
+| **ID** | BUG-005 |
+| **Серьёзность** | Средняя |
+| **Приоритет** | Низкий |
+| **Статус** | К выполнению |
 
 ---
 
