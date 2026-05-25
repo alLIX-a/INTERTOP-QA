@@ -14,7 +14,8 @@
 | API: Каталог товаров | 3 | 2 | 1 | 0 | 2 |
 | Добавление товара в корзину | 8 | 7 | 1 | 0 | 1 |
 | Корзина | 5 | 5 | 0 | 0 | 0 |
-| **Итого** | **35** | **29** | **5** | **1** | **8** |
+| API: Корзина | 1 | 0 | 0 | 1 | 0 |
+| **Итого** | **36** | **29** | **5** | **2** | **8** |
 
 ---
 
@@ -73,6 +74,7 @@
 | [TC-008](test-cases/TC-008-get-catalog-api-get-product.md) | GET /catalogApi/getProduct — валидный slug | Пройден |
 | [TC-009](test-cases/TC-009-get-catalog-api-get-product-invalid-slug.md) | GET /catalogApi/getProduct — невалидный slug | Пройден |
 | [TC-010](test-cases/TC-010-get-catalog-api-get-product-missing-body.md) | GET /catalogApi/getProduct — отсутствующий body | Провален |
+| [TC-036](test-cases/TC-036-cart-api-remove-item-from-cart-removing-item-from-cart.md) | cartApi/removeItemFromCart - удаление товара из корзины | Заблокирован |
 
 ---
 
