@@ -92,6 +92,9 @@
 | [BUG-006](bug-reports/BUG-006-search-field-search-window-dismisses-without-an-error-message-on-clicking-the-search-button-with-an-empty-field.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при пустом поле | Низкая | Низкий | К выполнению |
 | [BUG-007](bug-reports/BUG-007-search-field-search-window-dismisses-without-an-error-message-on-clicking-search-button-with-string-less-than-3-characters.md) | Поле поиска - окно с полем закрывается без сообщения об ошибке после нажатия на кнопку поиска при длине запроса меньше 3 символов | Низкая | Средний | К выполнению |
 | [BUG-008](bug-reports/BUG-008-item-page-the-user-can-the-item-to-the-cart-in-quantity-higher-than-available.md) | Страница товара - пользователь может добавить товар в корзину в большем количестве чем доступно в наличии | Средняя | Высокий | К выполнению |
+| [BUG-009](bug-reports/BUG-009-search-field-clear-input-but-not-working.md) | Поле поиска - кнопка очистки поля поиска не работает | Средняя | Средний | К выполнению |
+
+
 
 ---
 
