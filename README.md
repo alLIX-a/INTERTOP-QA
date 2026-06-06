@@ -17,7 +17,8 @@
 | Добавление товара в корзину | 8 | 7 | 1 | 0 | 1 |
 | Корзина | 5 | 5 | 0 | 0 | 0 |
 | API: Корзина | 1 | 0 | 0 | 1 | 0 |
-| **Итого** | **47** | **39** | **6** | **2** | **11** |
+| Фильтрация товаров | 1 | 1 | 0 | 0 | 0 |
+| **Итого** | **48** | **40** | **6** | **2** | **11** |
 
 ---
 
@@ -68,6 +69,7 @@
 | [TC-045](test-cases/TC-045-opening-search-results-page-on-clicking-suggestion-from-dropdown-menu.md) | Переход на страницу результатов поиска при выборе предложения из выпадающего меню | Пройден |
 | [TC-046](test-cases/TC-046-showing-relevant-suggestions-in-dropdown-menu-on-partial-search.md) | Отображение релевантных предложений в выпадающем меню при частичном вводе запроса | Пройден |
 | [TC-047](test-cases/TC-047-showing-relevant-suggestions-in-dropdown-menu-on-search-with-typo.md) | Отображение релевантных предложений в выпадающем меню при вводе поискового запроса с опечаткой | Пройден |
+| [TC-048](test-cases/TC-048-filtering-items-by-one-brand.md) | Фильтрация товаров по одному бренду | Пройден |
 
 
 ## API Testing
