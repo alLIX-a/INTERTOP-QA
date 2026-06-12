@@ -122,6 +122,7 @@
 | [BUG-010](bug-reports/BUG-010-search-history-request-in-upper-case-saved-to-history-with-identical-request-in-lower-case-in-history.md) | История поиска - запрос в верхнем регистре добавляется в историю при наличии в истории идентичного запроса в нижнем регистре | Средняя | Низкий | К выполнению |
 | [BUG-011](bug-reports/BUG-011-suggestions-dropdown-search-with-typos-works-inconsistently.md) | Выпадающее меню предложений - поиск с опечатками работает непоследовательно | Средняя | Средний | К выполнению |
 | [BUG-012](bug-reports/BUG-012-choosing-item-size-system-returns-items-with-sizes-in-eu-format-when-no-items-in-size-selected-are-present.md) | Выбор размера товара - при отсутствии товара в заданном размере система возвращает товары в другой размерной сетке | Средняя | Средний | К выполнению |
+| [BUG-013](bug-reports/BUG-013-filtering-items-by-price-range-filter-not-working-when-range-boundaries-are-same.md) | Фильтр товаров по ценовому диапазону - фильтр не применяется при равных нижней и верхней границах диапазона | Средняя | Средний | К выполнению |
 
 
 
