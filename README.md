@@ -125,6 +125,7 @@
 | [BUG-011](bug-reports/BUG-011-suggestions-dropdown-search-with-typos-works-inconsistently.md) | Выпадающее меню предложений - поиск с опечатками работает непоследовательно | Средняя | Средний | К выполнению |
 | [BUG-012](bug-reports/BUG-012-choosing-item-size-system-returns-items-with-sizes-in-eu-format-when-no-items-in-size-selected-are-present.md) | Выбор размера товара - при отсутствии товара в заданном размере система возвращает товары в другой размерной сетке | Средняя | Средний | К выполнению |
 | [BUG-013](bug-reports/BUG-013-filtering-items-by-price-range-filter-not-working-when-range-boundaries-are-same.md) | Фильтр товаров по ценовому диапазону - фильтр не применяется при равных нижней и верхней границах диапазона | Средняя | Средний | К выполнению |
+| [BUG-014](bug-reports/BUG-014-filtering-items-by-price-system-not-showing-error-message-when-min-price-is-higher-than-max.md) | Фильтрация товаров по цене - система не отображает сообщение об ошибке при минимальной цене выше максимальной | Низкая | Низкий | К выполнению |
 
 
 
