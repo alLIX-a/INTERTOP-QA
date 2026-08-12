@@ -113,7 +113,8 @@
 
 | Тест-кейс (ручной) | Автотест | Статус |
 |---|---|---|
-| [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | `SignUpTest.signUpWithValidCredentials` | Доходит до заполнения формы, дальше заблокирован капчей |
+| [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | `SignUpTest.signUpWithValidCredentials` | Заблокирован |
+| [TC-007](test-cases/TC-007-registration-with-existing-email.md) | `SignUpTest.signUpWithExistingEmail` | Заблокирован |
 
 ### Известные ограничения
 
