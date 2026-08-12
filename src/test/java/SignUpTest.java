@@ -1,12 +1,14 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.junit.jupiter.params.ParameterizedTest;
 
 import java.time.Duration;
 
@@ -24,10 +26,7 @@ public class SignUpTest {
         homePageUrl = "https://intertop.kz/ru-kz/";
     }
 
-    @AfterEach
-    void tearDown() {
-        driver.quit();
-    }
+
 
     @Test
     void signUpWithValidCredentials() {
@@ -68,6 +67,34 @@ public class SignUpTest {
 
         WebElement passwordField = wait.
                 until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
+        passwordField.sendKeys("Test123!");
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {
+            "testemail@domain.",
+            "testemail@domain",
+            "testemail@.com",
+            "testemaildomain.com",
+            "testemail"
+    })
+    void signUpWithEmailInInvalidFormats(String invalidEmail) {
+        driver.get(homePageUrl);
+
+        WebElement profileIcon = wait
+                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-label='Личный кабинет']")));
+        profileIcon.click();
+
+        WebElement createAccountButton = wait
+                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-selected='false']")));
+        createAccountButton.click();
+
+        WebElement emailOrPhoneField = wait
+                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='email_or_phone']")));
+        emailOrPhoneField.sendKeys(invalidEmail);
+
+        WebElement passwordField = wait
+                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
         passwordField.sendKeys("Test123!");
     }
 }
