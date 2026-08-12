@@ -26,7 +26,10 @@ public class SignUpTest {
         homePageUrl = "https://intertop.kz/ru-kz/";
     }
 
-
+    @AfterEach
+    void tearDown() {
+        driver.quit();
+    }
 
     @Test
     void signUpWithValidCredentials() {
