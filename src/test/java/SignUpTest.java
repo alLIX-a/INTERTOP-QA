@@ -48,7 +48,26 @@ public class SignUpTest {
         WebElement passwordField = wait.
                 until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
         passwordField.sendKeys("Test123!");
+    }
 
+    @Test
+    void signUpWithExistingEmail() {
+        driver.get(homePageUrl);
 
+        WebElement profileIcon = wait.
+                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-label='Личный кабинет']")));
+        profileIcon.click();
+
+        WebElement createAccountButton = wait.
+                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-selected='false']")));
+        createAccountButton.click();
+
+        WebElement emailOrPhoneField = wait.
+                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='email_or_phone']")));
+        emailOrPhoneField.sendKeys("gamedi6814@gcervera.com");
+
+        WebElement passwordField = wait.
+                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
+        passwordField.sendKeys("Test123!");
     }
 }
