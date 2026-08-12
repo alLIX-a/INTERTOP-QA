@@ -115,6 +115,7 @@
 |---|---|---|
 | [TC-001](test-cases/TC-001-signing-up-with-valid-email.md) | `SignUpTest.signUpWithValidCredentials` | Заблокирован |
 | [TC-007](test-cases/TC-007-registration-with-existing-email.md) | `SignUpTest.signUpWithExistingEmail` | Заблокирован |
+| [TC-003](test-cases/TC-003-signing-up-with-an-email-in-invalid-formats.md) | `SignUpTest.signUpWithEmailInInvalidFormats` | Заблокирован |
 
 ### Известные ограничения
 
