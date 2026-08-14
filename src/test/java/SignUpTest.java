@@ -93,7 +93,7 @@ public class SignUpTest {
         createAccountButtonEl.click();
 
         WebElement emailOrPhoneFieldEl = wait.until(ExpectedConditions.elementToBeClickable(emailOrPhoneField));
-        emailOrPhoneFieldEl.sendKeys("someEmail@gmail.com");
+        emailOrPhoneFieldEl.sendKeys(invalidEmail);
 
         WebElement passwordFieldEl = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
         passwordFieldEl.sendKeys("Test123!");
