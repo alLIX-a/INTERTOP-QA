@@ -18,12 +18,22 @@ public class SignUpTest {
 
     String homePageUrl;
 
+    By profileIcon;
+    By createAccountButton;
+    By emailOrPhoneField;
+    By passwordField;
+
     @BeforeEach
     void setUp() {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         homePageUrl = "https://intertop.kz/ru-kz/";
+
+        profileIcon = By.cssSelector("[aria-label='Личный кабинет']");
+        createAccountButton = By.cssSelector("[aria-selected='false']");
+        emailOrPhoneField = By.cssSelector("[name='email_or_phone']");
+        passwordField = By.cssSelector("[name='password']");
     }
 
     @AfterEach
@@ -35,42 +45,34 @@ public class SignUpTest {
     void signUpWithValidCredentials() {
         driver.get(homePageUrl);
 
-        WebElement profileIcon = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-label='Личный кабинет']")));
-        profileIcon.click();
+        WebElement profileIconEl = wait.until(ExpectedConditions.elementToBeClickable(profileIcon));
+        profileIconEl.click();
 
-        WebElement createAccountButton = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-selected='false']")));
-        createAccountButton.click();
+        WebElement createAccountButtonEl = wait.until(ExpectedConditions.elementToBeClickable(createAccountButton));
+        createAccountButtonEl.click();
 
-        WebElement emailOrPhoneField = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='email_or_phone']")));
-        emailOrPhoneField.sendKeys("someEmail@gmail.com");
+        WebElement emailOrPhoneFieldEl = wait.until(ExpectedConditions.elementToBeClickable(emailOrPhoneField));
+        emailOrPhoneFieldEl.sendKeys("someEmail@gmail.com");
 
-        WebElement passwordField = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
-        passwordField.sendKeys("Test123!");
+        WebElement passwordFieldEl = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
+        passwordFieldEl.sendKeys("Test123!");
     }
 
     @Test
     void signUpWithExistingEmail() {
         driver.get(homePageUrl);
 
-        WebElement profileIcon = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-label='Личный кабинет']")));
-        profileIcon.click();
+        WebElement profileIconEl = wait.until(ExpectedConditions.elementToBeClickable(profileIcon));
+        profileIconEl.click();
 
-        WebElement createAccountButton = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-selected='false']")));
-        createAccountButton.click();
+        WebElement createAccountButtonEl = wait.until(ExpectedConditions.elementToBeClickable(createAccountButton));
+        createAccountButtonEl.click();
 
-        WebElement emailOrPhoneField = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='email_or_phone']")));
-        emailOrPhoneField.sendKeys("gamedi6814@gcervera.com");
+        WebElement emailOrPhoneFieldEl = wait.until(ExpectedConditions.elementToBeClickable(emailOrPhoneField));
+        emailOrPhoneFieldEl.sendKeys("someEmail@gmail.com");
 
-        WebElement passwordField = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
-        passwordField.sendKeys("Test123!");
+        WebElement passwordFieldEl = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
+        passwordFieldEl.sendKeys("Test123!");
     }
 
     @ParameterizedTest
@@ -84,20 +86,16 @@ public class SignUpTest {
     void signUpWithEmailInInvalidFormats(String invalidEmail) {
         driver.get(homePageUrl);
 
-        WebElement profileIcon = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-label='Личный кабинет']")));
-        profileIcon.click();
+        WebElement profileIconEl = wait.until(ExpectedConditions.elementToBeClickable(profileIcon));
+        profileIconEl.click();
 
-        WebElement createAccountButton = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-selected='false']")));
-        createAccountButton.click();
+        WebElement createAccountButtonEl = wait.until(ExpectedConditions.elementToBeClickable(createAccountButton));
+        createAccountButtonEl.click();
 
-        WebElement emailOrPhoneField = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='email_or_phone']")));
-        emailOrPhoneField.sendKeys(invalidEmail);
+        WebElement emailOrPhoneFieldEl = wait.until(ExpectedConditions.elementToBeClickable(emailOrPhoneField));
+        emailOrPhoneFieldEl.sendKeys("someEmail@gmail.com");
 
-        WebElement passwordField = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("[name='password']")));
-        passwordField.sendKeys("Test123!");
+        WebElement passwordFieldEl = wait.until(ExpectedConditions.elementToBeClickable(passwordField));
+        passwordFieldEl.sendKeys("Test123!");
     }
 }
