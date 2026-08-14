@@ -10,13 +10,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 public class SearchFieldTest {
     WebDriver driver;
     WebDriverWait wait;
 
     String homePageUrl;
+
+    By searchButton;
+    By searchField;
+
+    String brandName;
 
     @BeforeEach
     void setUp() {
@@ -24,20 +27,22 @@ public class SearchFieldTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         homePageUrl = "https://intertop.kz/ru-kz/";
+        searchButton = By.className("in-navbar__search-btn");
+        searchField = By.cssSelector("[placeholder='Поиск модных находок']");
+
+        brandName = "Vans";
     }
 
     @Test
     void searchForAnExistingItem() {
         driver.get(homePageUrl);
 
-        WebElement searchButton = wait.
-                until(ExpectedConditions.elementToBeClickable(By.className("in-navbar__search-btn")));
-        searchButton.click();
+        WebElement searchButtonEl = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+        searchButtonEl.click();
 
-        WebElement searchField = wait.
-                until(ExpectedConditions.elementToBeClickable(By.cssSelector("[placeholder='Поиск модных находок']")));
-        searchField.sendKeys("Vans");
+        WebElement searchFieldEl = wait.until(ExpectedConditions.elementToBeClickable(searchField));
+        searchFieldEl.sendKeys(brandName);
 
-        searchField.sendKeys(Keys.ENTER);
+        searchFieldEl.sendKeys(Keys.ENTER);
     }
 }
